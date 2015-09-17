@@ -1,6 +1,6 @@
 {
   "name": "redux-undo-boilerplate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My module",
   "main": "lib/index.js",
   "license": "MIT",
@@ -64,6 +64,6 @@
     "redux-logger": "^1.0.6",
     "redux-promise": "^0.5.0",
     "redux-thunk": "^0.1.0",
-    "redux-undo": "^0.1.0"
+    "redux-undo": "^0.2.0"
   }
 }
