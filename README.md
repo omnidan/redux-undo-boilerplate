@@ -6,13 +6,22 @@ It is based off [redux-boilerplate](https://github.com/chentsulin/redux-boilerpl
 by [chentsulin](https://github.com/chentsulin) - Thank you so much :heart:
 
 
+## Installation
+
+```sh
+npm install
+```
+
+
 ## Start
 
 ```sh
 npm start
 ```
 
-Or you can use `webpack`:
+This will run a web server at [http://localhost:3000](http://localhost:3000)
+
+Or you can use `webpack` directly:
 
 ```sh
 webpack-dev-server
