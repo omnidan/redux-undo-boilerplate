@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './containers/Root';
-import BrowserHistory from 'react-router/lib/BrowserHistory';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 
-const history = new BrowserHistory();
+const history = createBrowserHistory();
 
 
 ReactDOM.render(

@@ -18,14 +18,12 @@ if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
   createStoreWithMiddleware = compose(
     applyMiddleware(thunkMiddleware, promiseMiddleware, loggerMiddleware),
     devTools(),
-    persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/)),
-    createStore
-  );
+    persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
+  )(createStore);
 } else {
   createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware, promiseMiddleware),
-    createStore
-  );
+    applyMiddleware(thunkMiddleware, promiseMiddleware)
+  )(createStore);
 }
 
 
@@ -33,5 +31,15 @@ if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
  * Creates a preconfigured store.
  */
 export default function configureStore(initialState) {
-  return createStoreWithMiddleware(rootReducer, initialState);
+  const store = createStoreWithMiddleware(rootReducer, initialState);
+
+  if (module.hot) {
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept('../reducers', () => {
+      const nextRootReducer = require('../reducers/index');
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+
+  return store;
 }

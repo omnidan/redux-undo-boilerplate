@@ -1,7 +1,8 @@
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
 export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 
-import { ActionCreators } from 'redux-undo';
+export const UNDO_COUNTER = 'UNDO_COUNTER';
+export const REDO_COUNTER = 'REDO_COUNTER';
 
 export function increment() {
   return {
@@ -16,9 +17,13 @@ export function decrement() {
 }
 
 export function undo() {
-  return ActionCreators.undo();
+  return {
+    type: UNDO_COUNTER
+  };
 }
 
 export function redo() {
-  return ActionCreators.redo();
+  return {
+    type: REDO_COUNTER
+  };
 }
