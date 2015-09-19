@@ -1,6 +1,6 @@
 # redux-undo-boilerplate
 
-This is a boilerplate that uses [redux-undo](https://github.com/omnidan/redux-undo).
+_a magical boilerplate with hot reloading and awesome error handling™ that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
 
 It is based off [redux-boilerplate](https://github.com/chentsulin/redux-boilerplate)
 by [chentsulin](https://github.com/chentsulin) - Thank you so much :heart:
@@ -8,24 +8,39 @@ by [chentsulin](https://github.com/chentsulin) - Thank you so much :heart:
 
 ## Installation
 
+You need to have `npm` installed (it comes with [node.js](https://nodejs.org/)).
+
 ```sh
 npm install
 ```
 
 
-## Start
+## Running
 
 ```sh
 npm start
 ```
 
-This will run a web server at [http://localhost:3000](http://localhost:3000)
 
-Or you can use `webpack` directly:
+## Demo
 
-```sh
-webpack-dev-server
-```
+[![http://i.imgur.com/HhuAnaG.gif](http://i.imgur.com/HhuAnaG.gif)](http://i.imgur.com/HhuAnaG.gif)
+
+### What happens if I change some code?
+
+Save the file in your editor and immediately see the changes reflected in your
+browser - coding has never been more efficient. What a beautiful world we live
+in nowadays.
+
+[![http://i.imgur.com/VCxUA2b.gif](http://i.imgur.com/VCxUA2b.gif)](http://i.imgur.com/VCxUA2b.gif)
+
+### What happens if I make a typo / syntax error?
+
+Many of us know this: You accidentally type in the wrong window once, add a
+random character to your code and when you run it again you're like "WTF this
+just worked?!" - let `webpack-hot-middleware` help you out with this:
+
+[![http://i.imgur.com/DTnGNFE.gif](http://i.imgur.com/DTnGNFE.gif)](http://i.imgur.com/DTnGNFE.gif)
 
 
 ## Testing
