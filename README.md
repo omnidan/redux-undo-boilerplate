@@ -1,6 +1,6 @@
 # redux-undo-boilerplate
 
-_a magical boilerplate with hot reloading and awesome error handling™ that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
+_a magical boilerplate with [hot reloading](#what-happens-if-i-change-some-code) and [awesome error handling™](#what-happens-if-i-make-a-typo--syntax-error) that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
 
 It is based off [redux-boilerplate](https://github.com/chentsulin/redux-boilerplate)
 by [chentsulin](https://github.com/chentsulin) - Thank you so much :heart:
@@ -24,7 +24,7 @@ npm start
 
 ## Demo
 
-[![http://i.imgur.com/HhuAnaG.gif](http://i.imgur.com/HhuAnaG.gif)](http://i.imgur.com/HhuAnaG.gif)
+[![https://i.imgur.com/9w8FHHI.gif](https://i.imgur.com/9w8FHHI.gif)](https://i.imgur.com/9w8FHHI.gif)
 
 ### What happens if I change some code?
 
