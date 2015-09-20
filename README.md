@@ -24,7 +24,7 @@ npm start
 
 ## Demo
 
-[![https://i.imgur.com/9w8FHHI.gif](https://i.imgur.com/9w8FHHI.gif)](https://i.imgur.com/9w8FHHI.gif)
+[![https://i.imgur.com/M2KR4uo.gif](https://i.imgur.com/M2KR4uo.gif)](https://i.imgur.com/M2KR4uo.gif)
 
 ### What happens if I change some code?
 
