@@ -21,6 +21,8 @@ npm install
 npm start
 ```
 
+This (unless configured otherwise) starts a web server at: [http://localhost:3000](http://localhost:3000)
+
 
 ## Demo
 
