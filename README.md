@@ -1,5 +1,7 @@
 # redux-undo-boilerplate
 
+![Version >=0.4](https://img.shields.io/badge/version-0.4.1-blue.svg?style=flat-square) [![Dependency Status](https://img.shields.io/david/omnidan/redux-undo-boilerplate.svg?style=flat-square)](https://david-dm.org/omnidan/redux-undo-boilerplate) [![devDependency Status](https://david-dm.org/omnidan/redux-undo-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/omnidan/redux-undo-boilerplate#info=devDependencies) [![https://gratipay.com/omnidan/](https://img.shields.io/gratipay/omnidan.svg?style=flat-square)](https://gratipay.com/omnidan/)
+
 _a magical boilerplate with [hot reloading](#what-happens-if-i-change-some-code) and [awesome error handling™](#what-happens-if-i-make-a-typo--syntax-error) that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
 
 It is based off [redux-boilerplate](https://github.com/chentsulin/redux-boilerplate)
