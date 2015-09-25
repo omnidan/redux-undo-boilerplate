@@ -13,17 +13,19 @@
       ],
       "extra": {
         // must be defined and be an array
-        "react-transform": [{
-          // can be an NPM module name or a local path
-          "target": "react-transform-hmr",
-          // see specific transform's docs for "imports" and "locals" it needs
-          "imports": ["react"],
-          "locals": ["module"]
-        }, {
-          // you can have many transforms, not just one
-          "target": "react-transform-catch-errors",
-          "imports": ["react", "redbox-react"]
-        }]
+        "react-transform": {
+	  "transforms": [{
+            // can be an NPM module name or a local path
+            "transform": "react-transform-hmr",
+            // see specific transform's docs for "imports" and "locals" it needs
+            "imports": ["react"],
+            "locals": ["module"]
+          }, {
+            // you can have many transforms, not just one
+            "transform": "react-transform-catch-errors",
+            "imports": ["react", "redbox-react"]
+          }]
+	}
       }
     }
   }
