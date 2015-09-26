@@ -4,7 +4,7 @@
     // this plugin will be included only in development mode, e.g.
     // if NODE_ENV (or BABEL_ENV) environment variable is not set
     // or is equal to "development"
-    "development": {
+    "development/client": {
       "plugins": [
         // Include babel-plugin-react-display-name if you’re
         // using React.createClass() *before* react-transform:
