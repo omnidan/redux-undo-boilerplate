@@ -4,9 +4,6 @@
 
 _a magical boilerplate with [hot reloading](#what-happens-if-i-change-some-code) and [awesome error handling™](#what-happens-if-i-make-a-typo--syntax-error) that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
 
-It is based off [redux-boilerplate](https://github.com/chentsulin/redux-boilerplate)
-by [chentsulin](https://github.com/chentsulin) - Thank you so much :heart:
-
 
 ## Installation
 
@@ -59,6 +56,20 @@ npm test
 In `webpack.config.js`, change `__DEVTOOLS__: false` to `__DEVTOOLS__: true` -
 that's all! (If webpack is watching the directory, you might have to restart
 webpack for it to take effect)
+
+
+## Thanks
+
+Special thanks to these awesome projects/people making this possible :heart:
+
+ * [React](https://facebook.github.io/react/)
+ * [Redux](https://rackt.github.io/redux/)
+ * [Babel](https://babeljs.io/) - for ES6 support
+ * [redux-boilerplate](https://github.com/chentsulin/redux-boilerplate) by [chentsulin](https://github.com/chentsulin) - this boilerplate is based off his project
+ * [babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform) by [gaearon](https://github.com/gaearon) - as a base for the hot reloading and error handling
+ * [react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors) by [gaearon](https://github.com/gaearon) - error handling
+ * [react-transform-hmr](https://github.com/gaearon/react-transform-hmr) by [gaearon](https://github.com/gaearon) - hot reloading
+ * [redux-devtools](https://github.com/gaearon/redux-devtools) by [gaearon](https://github.com/gaearon)
 
 
 ## License
