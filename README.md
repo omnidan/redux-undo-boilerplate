@@ -16,11 +16,21 @@ npm install
 
 ## Running
 
+During development, run:
+
+```sh
+npm run dev
+```
+
+Which enables some development tools.
+
+In production, run:
+
 ```sh
 npm start
 ```
 
-This (unless configured otherwise) starts a web server at: [http://localhost:3000](http://localhost:3000)
+These commands (unless configured otherwise) start a web server at: [http://localhost:3000](http://localhost:3000)
 
 
 ## Demo
@@ -49,13 +59,6 @@ just worked?!" - let `webpack-hot-middleware` help you out with this:
 ```sh
 npm test
 ```
-
-
-## Enabling redux-devtools
-
-In `webpack.config.js`, change `__DEVTOOLS__: false` to `__DEVTOOLS__: true` -
-that's all! (If webpack is watching the directory, you might have to restart
-webpack for it to take effect)
 
 
 ## Thanks

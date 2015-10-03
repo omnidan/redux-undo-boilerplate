@@ -17,7 +17,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      __DEVTOOLS__: false
+      __DEVTOOLS__: !!process.env.DEBUG
     })
   ],
   resolve: {

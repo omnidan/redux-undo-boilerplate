@@ -1,9 +1,11 @@
 /* global __DEVTOOLS__ */
 import { createStore, applyMiddleware, compose } from 'redux';
+// reducer
+import rootReducer from '../reducers';
+// middleware
 import thunkMiddleware from 'redux-thunk';
 import promiseMiddleware from 'redux-promise';
 import createLogger from 'redux-logger';
-import rootReducer from '../reducers';
 
 const loggerMiddleware = createLogger({
   level: 'info',
@@ -16,7 +18,11 @@ let createStoreWithMiddleware;
 if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
   const { devTools, persistState } = require('redux-devtools');
   createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware, promiseMiddleware, loggerMiddleware),
+    applyMiddleware(
+      thunkMiddleware,
+      promiseMiddleware,
+      loggerMiddleware
+    ),
     devTools(),
     persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
   )(createStore);

@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "node server.js",
+    "dev": "DEBUG=true node server.js",
     "clean": "rimraf lib dist coverage",
     "lint": "eslint src test",
     "test": "mocha --compilers js:babel/register --recursive",
