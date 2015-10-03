@@ -12,6 +12,8 @@ const loggerMiddleware = createLogger({
   collapsed: true
 });
 
+const enforceImmutableMiddleware = require('redux-immutable-state-invariant')();
+
 
 let createStoreWithMiddleware;
 
@@ -19,6 +21,7 @@ if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
   const { devTools, persistState } = require('redux-devtools');
   createStoreWithMiddleware = compose(
     applyMiddleware(
+      enforceImmutableMiddleware,
       thunkMiddleware,
       promiseMiddleware,
       loggerMiddleware
