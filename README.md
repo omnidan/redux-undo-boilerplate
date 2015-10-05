@@ -84,6 +84,7 @@ Special thanks to these awesome projects/people making this possible :heart:
  * [react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors) by [gaearon](https://github.com/gaearon) - error handling
  * [react-transform-hmr](https://github.com/gaearon/react-transform-hmr) by [gaearon](https://github.com/gaearon) - hot reloading
  * [redux-devtools](https://github.com/gaearon/redux-devtools) by [gaearon](https://github.com/gaearon)
+ * [redux-immutable-state-invariant](https://github.com/leoasis/redux-immutable-state-invariant) by [leoasis](https://github.com/leoasis) - detect state mutations
 
 
 ## License
