@@ -53,6 +53,17 @@ just worked?!" - let `webpack-hot-middleware` help you out with this:
 
 [![http://i.imgur.com/DTnGNFE.gif](http://i.imgur.com/DTnGNFE.gif)](http://i.imgur.com/DTnGNFE.gif)
 
+### What happens if I mutate the state directly?
+
+Mutating the state directly causes lots of bugs with Redux. There are no
+immutables in JavaScript, so we can't make sure this doesn't happen unless we
+use something like [Immutable.js](https://facebook.github.io/immutable-js/).
+
+If you run this boilerplate in dev mode (`npm run dev`), it will tell you when
+you [mutate something directly](https://github.com/omnidan/redux-undo-boilerplate/blob/enforce-immutable/src/reducers/counter.js#L9):
+
+[![https://i.imgur.com/y02EDxc.png](https://i.imgur.com/y02EDxc.png)](https://i.imgur.com/y02EDxc.png)
+
 
 ## Testing
 

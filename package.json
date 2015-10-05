@@ -69,7 +69,7 @@
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
     "redux-devtools": "^2.1.4",
-    "redux-immutable-state-invariant": "^1.1.0",
+    "redux-immutable-state-invariant": "^1.1.1",
     "rimraf": "^2.4.3",
     "sinon": "^1.17.1",
     "webpack": "^1.12.2",
