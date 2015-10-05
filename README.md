@@ -60,7 +60,7 @@ immutables in JavaScript, so we can't make sure this doesn't happen unless we
 use something like [Immutable.js](https://facebook.github.io/immutable-js/).
 
 If you run this boilerplate in dev mode (`npm run dev`), it will tell you when
-you [mutate something directly](https://github.com/omnidan/redux-undo-boilerplate/blob/enforce-immutable/src/reducers/counter.js#L9):
+you [mutate something directly](https://github.com/omnidan/redux-undo-boilerplate/blob/master/src/reducers/counter.js#L9):
 
 [![https://i.imgur.com/y02EDxc.png](https://i.imgur.com/y02EDxc.png)](https://i.imgur.com/y02EDxc.png)
 
