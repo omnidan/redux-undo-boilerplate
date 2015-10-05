@@ -8,7 +8,7 @@ export default class Counter extends Component {
     decrement: PropTypes.func.isRequired,
     undo: PropTypes.func.isRequired,
     redo: PropTypes.func.isRequired,
-    counter: PropTypes.number.isRequired
+    count: PropTypes.number.isRequired
   }
 
   render() {
