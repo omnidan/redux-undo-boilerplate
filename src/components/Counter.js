@@ -12,10 +12,10 @@ export default class Counter extends Component {
   }
 
   render() {
-    const { increment, decrement, counter, undo, redo } = this.props;
+    const { increment, decrement, count, undo, redo } = this.props;
     return (
       <p>
-        Clicked: {counter} times
+        Clicked: {count} times
         {' '}
         <button onClick={increment}>+</button>
         {' '}

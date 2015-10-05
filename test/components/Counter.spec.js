@@ -14,7 +14,7 @@ function setup() {
     incrementAsync: spy(),
     decrement: spy()
   };
-  const component = TestUtils.renderIntoDocument(<Counter counter={1} {...actions} />);
+  const component = TestUtils.renderIntoDocument(<Counter count={1} {...actions} />);
   return {
     component: component,
     actions: actions,
