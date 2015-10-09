@@ -12,4 +12,12 @@ describe('actions', () => {
   it('decrement should create decrement action', () => {
     expect(actions.decrement()).to.deep.equal({ type: actions.DECREMENT_COUNTER });
   });
+
+  it('undo should create undo action', () => {
+    expect(actions.undo()).to.deep.equal({ type: actions.UNDO_COUNTER });
+  });
+
+  it('redo should create redo action', () => {
+    expect(actions.redo()).to.deep.equal({ type: actions.REDO_COUNTER });
+  });
 });

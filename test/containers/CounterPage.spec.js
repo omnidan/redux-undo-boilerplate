@@ -45,5 +45,23 @@ describe('containers', () => {
       TestUtils.Simulate.click(buttons[1]);
       expect(p.textContent).to.match(/^Clicked: -1 times/);
     });
+
+    it('should undo increment action on undo button click', () => {
+      const { buttons, p } = setup();
+      TestUtils.Simulate.click(buttons[0]);
+      expect(p.textContent).to.match(/^Clicked: 1 times/);
+      TestUtils.Simulate.click(buttons[2]);
+      expect(p.textContent).to.match(/^Clicked: 0 times/);
+    });
+
+    it('should redo after undo on redo button click', () => {
+      const { buttons, p } = setup();
+      TestUtils.Simulate.click(buttons[0]);
+      expect(p.textContent).to.match(/^Clicked: 1 times/);
+      TestUtils.Simulate.click(buttons[2]);
+      expect(p.textContent).to.match(/^Clicked: 0 times/);
+      TestUtils.Simulate.click(buttons[3]);
+      expect(p.textContent).to.match(/^Clicked: 1 times/);
+    });
   });
 });

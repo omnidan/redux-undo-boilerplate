@@ -12,7 +12,9 @@ function setup() {
     increment: spy(),
     incrementIfOdd: spy(),
     incrementAsync: spy(),
-    decrement: spy()
+    decrement: spy(),
+    undo: spy(),
+    redo: spy()
   };
   const component = TestUtils.renderIntoDocument(<Counter count={1} {...actions} />);
   return {
@@ -44,5 +46,17 @@ describe('Counter component', () => {
     const { buttons, actions } = setup();
     TestUtils.Simulate.click(buttons[1]);
     expect(actions.decrement.called).to.be.true;
+  });
+
+  it('third button should call undo', () => {
+    const { buttons, actions } = setup();
+    TestUtils.Simulate.click(buttons[2]);
+    expect(actions.undo.called).to.be.true;
+  });
+
+  it('fourth button should call redo', () => {
+    const { buttons, actions } = setup();
+    TestUtils.Simulate.click(buttons[3]);
+    expect(actions.redo.called).to.be.true;
   });
 });
