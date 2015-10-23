@@ -18,7 +18,8 @@ const enforceImmutableMiddleware = require('redux-immutable-state-invariant')();
 let createStoreWithMiddleware;
 
 if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
-  const { devTools, persistState } = require('redux-devtools');
+  const { persistState } = require('redux-devtools');
+  const DevTools = require('../containers/DevTools');
   createStoreWithMiddleware = compose(
     applyMiddleware(
       enforceImmutableMiddleware,
@@ -26,7 +27,7 @@ if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
       promiseMiddleware,
       loggerMiddleware
     ),
-    devTools(),
+    DevTools.instrument(),
     persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
   )(createStore);
 } else {

@@ -11,19 +11,14 @@ const store = configureStore();
 
 function createElements(history) {
   const elements = [
-    <Provider store={store} key="provider">
-      <Router history={history} children={routes} />
-    </Provider>
+    <Router key="router" history={history} children={routes} />
   ];
 
   if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
-    const { DevTools, DebugPanel, LogMonitor } = require('redux-devtools/lib/react');
-    elements.push(
-      <DebugPanel top right bottom key="debugPanel">
-        <DevTools store={store} monitor={LogMonitor}/>
-      </DebugPanel>
-    );
+    const DevTools = require('./DevTools');
+    elements.push(<DevTools key="devtools" />);
   }
+
   return elements;
 }
 
@@ -36,9 +31,11 @@ export default class Root extends Component {
 
   render() {
     return (
-      <div>
-        {createElements(this.props.history)}
-      </div>
+      <Provider store={store} key="provider">
+        <div>
+          {createElements(this.props.history)}
+        </div>
+      </Provider>
     );
   }
 }
