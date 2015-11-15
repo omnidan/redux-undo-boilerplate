@@ -1,5 +1,4 @@
-import React, { Component, PropTypes } from 'react';
-
+import React, { Component, PropTypes } from 'react'
 
 export default class Main extends Component {
 
@@ -7,12 +6,12 @@ export default class Main extends Component {
     children: PropTypes.any.isRequired
   }
 
-  render() {
+  render () {
     return (
       <div>
           {/* this will render the child routes */}
           {React.cloneElement(this.props.children, this.props)}
       </div>
-    );
+    )
   }
 }

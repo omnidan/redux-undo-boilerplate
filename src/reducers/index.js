@@ -1,11 +1,10 @@
-import { combineReducers } from 'redux';
-import counter from './counter';
+import { combineReducers } from 'redux'
+import counter from './counter'
 import {
   INCREMENT_COUNTER, DECREMENT_COUNTER,
   UNDO_COUNTER, REDO_COUNTER
-} from '../actions/counter';
-import undoable, { includeAction } from 'redux-undo';
-
+} from '../actions/counter'
+import undoable, { includeAction } from 'redux-undo'
 
 const rootReducer = combineReducers({
   counter: undoable(counter, {
@@ -15,7 +14,6 @@ const rootReducer = combineReducers({
     undoType: UNDO_COUNTER,
     redoType: REDO_COUNTER
   })
-});
+})
 
-
-export default rootReducer;
+export default rootReducer

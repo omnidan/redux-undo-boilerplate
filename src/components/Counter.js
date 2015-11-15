@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
-
+/*eslint-disable*/
+import React, { Component, PropTypes } from 'react'
+/*eslint-enable*/
 
 export default class Counter extends Component {
 
@@ -11,8 +12,8 @@ export default class Counter extends Component {
     count: PropTypes.number.isRequired
   }
 
-  render() {
-    const { increment, decrement, count, undo, redo } = this.props;
+  render () {
+    const { increment, decrement, count, undo, redo } = this.props
     return (
       <p>
         Clicked: {count} times
@@ -25,6 +26,6 @@ export default class Counter extends Component {
         {' '}
         <button onClick={redo}>Redo</button>
       </p>
-    );
+    )
   }
 }

@@ -1,10 +1,8 @@
-import { connect } from 'react-redux';
-import Main from '../components/Main';
+import { connect } from 'react-redux'
+import Main from '../components/Main'
 
-
-function mapStateToProps(/* state */) {
-  return {};
+function mapStateToProps (/* state */) {
+  return {}
 }
 
-
-export default connect(mapStateToProps)(Main);
+export default connect(mapStateToProps)(Main)
