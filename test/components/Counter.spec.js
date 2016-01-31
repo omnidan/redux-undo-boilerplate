@@ -1,7 +1,7 @@
 /* eslint no-unused-expressions: 0 */
 import { expect } from 'chai'
 import { spy } from 'sinon'
-import jsdom from 'mocha-jsdom'
+import jsdom from 'jsdom-global'
 /*eslint-disable*/
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'

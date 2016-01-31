@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import jsdom from 'mocha-jsdom'
+import jsdom from 'jsdom-global'
 /*eslint-disable*/
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
