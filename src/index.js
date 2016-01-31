@@ -2,12 +2,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Root from './containers/Root'
-import createBrowserHistory from 'history/lib/createBrowserHistory'
+import { browserHistory } from 'react-router'
 /*eslint-enable*/
 
-const history = createBrowserHistory()
-
 ReactDOM.render(
-  <Root history={history} />,
+  <Root history={browserHistory} />,
   document.getElementById('root')
 )

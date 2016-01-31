@@ -10,7 +10,7 @@ export default class Counter extends Component {
     undo: PropTypes.func.isRequired,
     redo: PropTypes.func.isRequired,
     count: PropTypes.number.isRequired
-  }
+  };
 
   render () {
     const { increment, decrement, count, undo, redo } = this.props

@@ -4,7 +4,7 @@ export default class Main extends Component {
 
   static propTypes = {
     children: PropTypes.any.isRequired
-  }
+  };
 
   render () {
     return (

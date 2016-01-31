@@ -28,7 +28,7 @@ export default class Root extends Component {
 
   static propTypes = {
     history: PropTypes.object.isRequired
-  }
+  };
 
   render () {
     return (
