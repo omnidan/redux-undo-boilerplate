@@ -7,18 +7,22 @@ import thunkMiddleware from 'redux-thunk'
 import promiseMiddleware from 'redux-promise'
 import createLogger from 'redux-logger'
 
+import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
+import defaultImport from '../utils/defaultImport'
+
+const enforceImmutableMiddleware = reduxImmutableStateInvariant()
+
 const loggerMiddleware = createLogger({
   level: 'info',
   collapsed: true
 })
 
-const enforceImmutableMiddleware = require('redux-immutable-state-invariant')()
 
 let createStoreWithMiddleware
 
 if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
   const { persistState } = require('redux-devtools')
-  const DevTools = require('../containers/DevTools')
+  const DevTools = defaultImport(require('../containers/DevTools'))
   createStoreWithMiddleware = compose(
     applyMiddleware(
       enforceImmutableMiddleware,
@@ -44,7 +48,8 @@ export default function configureStore (initialState) {
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('../reducers', () => {
-      const nextRootReducer = require('../reducers/index')
+      const nextRootReducer = defaultImport(require('../reducers/index'))
+
       store.replaceReducer(nextRootReducer)
     })
   }
