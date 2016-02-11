@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { Router } from 'react-router'
 import configureStore from '../store/configureStore'
 import routes from '../routes'
+import defaultImport from '../utils/defaultImport'
 /*eslint-enable*/
 
 const store = configureStore()
@@ -16,7 +17,7 @@ function createElements (history) {
 
   if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
     /*eslint-disable*/
-    const DevTools = require('./DevTools')
+    const DevTools = defaultImport(require('./DevTools'))
     /*eslint-enable*/
     elements.push(<DevTools key="devtools" />)
   }
