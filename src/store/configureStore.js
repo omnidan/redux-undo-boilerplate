@@ -17,7 +17,6 @@ const loggerMiddleware = createLogger({
   collapsed: true
 })
 
-
 let createStoreWithMiddleware
 
 if (typeof __DEVTOOLS__ !== 'undefined' && __DEVTOOLS__) {
