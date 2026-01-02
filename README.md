@@ -1,5 +1,9 @@
 # redux-undo-boilerplate
 
+> ⚠️ **Project Status: Not Actively Maintained**
+> 
+> This project is currently not being actively maintained. If you are interested in taking over its development and maintenance, please contact me.
+
 ![Version 1.0.0-beta2](https://img.shields.io/badge/version-1.0.0--beta2-blue.svg?style=flat-square) [![Build Status](https://img.shields.io/travis/omnidan/redux-undo-boilerplate/master.svg?style=flat-square)](https://travis-ci.org/omnidan/redux-undo-boilerplate) [![Dependency Status](https://img.shields.io/david/omnidan/redux-undo-boilerplate.svg?style=flat-square)](https://david-dm.org/omnidan/redux-undo-boilerplate) [![devDependency Status](https://david-dm.org/omnidan/redux-undo-boilerplate/dev-status.svg?style=flat-square)](https://david-dm.org/omnidan/redux-undo-boilerplate#info=devDependencies) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/) [![https://gratipay.com/omnidan/](https://img.shields.io/gratipay/omnidan.svg?style=flat-square)](https://gratipay.com/omnidan/)
 
 _a magical boilerplate with [hot reloading](#what-happens-if-i-change-some-code) and [awesome error handling™](#what-happens-if-i-make-a-typo--syntax-error) that uses [webpack](https://github.com/webpack/webpack), [redux](https://github.com/rackt/redux), [react](https://github.com/facebook/react) and [redux-undo](https://github.com/omnidan/redux-undo)_
